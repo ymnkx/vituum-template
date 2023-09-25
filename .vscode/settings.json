@@ -1,0 +1,8 @@
+{
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src",
+    "@ts": "${folder}/src/scripts",
+    "@scss": "${folder}/src/styles",
+    "~": "${folder}/public"
+  }
+}

@@ -1,0 +1,10 @@
+// @use '@/styles/develop/+' as *;
+@use '@scss/develop/+' as *;
+
+body {
+  background-color: blanchedalmond;
+
+  h1 {
+    font-size: vw(20);
+  }
+}
