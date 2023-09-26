@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "markuplint:recommended"
+  ],
+  "rules": {
+    "character-reference": false
+  },
+  "parser": {
+    ".njk$": "@markuplint/nunjucks-parser"
+  }
+}

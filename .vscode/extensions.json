@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "yusukehirao.vscode-markuplint",
+    "esbenp.prettier-vscode",
+    "tombonnike.vscode-status-bar-format-toggle",
+    "stylelint.vscode-stylelint"
+  ],
+  "unwantedRecommendations": []
+}

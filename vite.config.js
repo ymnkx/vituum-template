@@ -3,6 +3,11 @@ import vituum from 'vituum';
 import nunjucks from '@vituum/vite-plugin-nunjucks';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 export default defineConfig({
   resolve: {
     alias: {
@@ -26,13 +31,4 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
-});
-
-vituum({
-  imports: {
-    filenamePattern: {
-      '+.css': [],
-      '+.scss': 'src/styles',
-    },
-  },
 });
