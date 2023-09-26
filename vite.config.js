@@ -31,4 +31,15 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  build: {
+    emptyOutDir: true,
+    polyfillModulePreload: false,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/css/[name].[ext]',
+        chunkFileNames: 'assets/js/[name].js',
+        entryFileNames: 'assets/js/[name].js',
+      },
+    },
+  },
 });
