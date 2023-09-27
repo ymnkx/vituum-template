@@ -15,6 +15,9 @@ export default defineConfig({
       '@scss/': `${__dirname}/src/styles/`,
     },
   },
+  server: {
+    host: true,
+  },
   plugins: [
     vituum({
       imports: {
