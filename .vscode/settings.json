@@ -1,0 +1,16 @@
+{
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src",
+    "@ts": "${folder}/src/scripts",
+    "@scss": "${folder}/src/styles",
+    "~": "${folder}/public"
+  },
+  "scss.validate": false,
+  "[scss]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  "stylelint.configFile": "./.stylelintrc.json",
+  "stylelint.validate": ["scss"]
+}
