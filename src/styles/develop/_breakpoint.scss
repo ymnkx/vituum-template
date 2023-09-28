@@ -1,9 +1,9 @@
-@use 'sass:map';
+@use "sass:map";
 
 $breakpoints: (
   sm: 0,
-  md: 48rem,
-  lg: 75rem,
+  md: 48em,
+  lg: 75em,
 ) !default;
 
 @function get-breakpoint($name) {
