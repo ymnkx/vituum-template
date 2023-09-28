@@ -17,7 +17,9 @@
   <body>
     <p>{{ site_name }}</p>
     <h1>{{ title }}</h1>
+
     {% include 'components/nav.njk' %}
+
     {% block contents %}{% endblock %}
   </body>
 </html>

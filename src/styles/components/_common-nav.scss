@@ -1,0 +1,12 @@
+.common-nav {
+  a[aria-current="page"] {
+    font-weight: bold;
+    text-decoration: none;
+    pointer-events: none;
+  }
+}
+
+.common-nav_list {
+  display: flex;
+  gap: 1rem;
+}

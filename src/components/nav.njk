@@ -1,8 +1,9 @@
-<ul>
-  <li>
-    <a href="/">Top Page</a>
-  </li>
-  <li>
-    <a href="/second/">Second Page</a>
-  </li>
-</ul>
+<nav class="common-nav">
+  <ul class="common-nav_list">
+    {% for item in navItems %}
+      <li>
+        <a href="{{ item.path }}" aria-current="{% if pagename == item.name %}page{% endif %}">{{ item.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
