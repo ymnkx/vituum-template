@@ -1,7 +1,7 @@
-{% include 'layouts/main.njk' %}
+{% extends 'layouts/main.njk' %}
 
 {% block css %}
-  <link rel="stylesheet" href="/src/styles/second.scss" />
+  <link rel="stylesheet" href="/src/styles/second.scss"/>
 {% endblock %}
 
 {% block js %}
@@ -10,5 +10,6 @@
 
 {% block contents %}
   <p>Second Page Contents</p>
-  <img src="/assets/image/vite.svg" alt="vite" width="100" height="100" decoding="async" />
+  <img src="/assets/image/vite.svg" alt="vite" width="100" height="100" decoding="async"/>
+  <img src="/assets/image/vituum.svg" alt="vituum" width="100" height="100" decoding="async"/>
 {% endblock %}
