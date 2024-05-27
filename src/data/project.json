@@ -3,12 +3,12 @@
   "navItems": [
     {
       "name": "top",
-      "path": "/",
+      "path": "",
       "label": "Top Page"
     },
     {
       "name": "second",
-      "path": "/second/",
+      "path": "second/",
       "label": "Second Page"
     }
   ]
