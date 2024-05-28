@@ -10,6 +10,11 @@
       "name": "second",
       "path": "second/",
       "label": "Second Page"
+    },
+    {
+      "name": "third",
+      "path": "second/third/",
+      "label": "Third Page"
     }
   ]
 }
