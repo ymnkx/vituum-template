@@ -1,8 +1,7 @@
-// @use '@/styles/develop/+' as *;
-@use "@scss/develop/+" as *;
-@use "@scss/design/+" as design;
-@use "@scss/base/+" as base;
-@use "@scss/components/+" as components;
+@use "@/components/include/+" as components;
+@import "develop/+";
+@import "design/+";
+@import "base/+";
 
 body {
   background-color: blanchedalmond;

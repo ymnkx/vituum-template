@@ -1,0 +1,28 @@
+@use "@scss/develop/+" as *;
+
+.common-button {
+  min-width: 10em;
+  padding: rem(8);
+  font-size: rem(16);
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 100vmax;
+
+  &.-primary {
+    background-color: tomato;
+  }
+
+  &.-small {
+    min-width: 8em;
+    padding: rem(8);
+    font-size: rem(14);
+  }
+
+  // &.-midium {}
+
+  &.-large {
+    min-width: 10em;
+    padding: rem(12);
+    font-size: rem(20);
+  }
+}

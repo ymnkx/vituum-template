@@ -1,0 +1,49 @@
+{%- macro getTitle(id = 'top', title = '', name = '') -%}
+  {%- if id !== 'top' -%}
+    {{ title }} | {{ name }}
+  {%- else -%}
+    {{ name }}
+  {%- endif -%}
+{%- endmacro -%}
+
+{%- macro getOgImageUrl(pageOgImage) -%}
+  {%- if pageOgImage -%}
+    {{ siteUrl + siteBase + pageOgImage }}
+  {%- else -%}
+    {{ siteUrl + siteBase + '/og.png' }}
+  {%- endif -%}
+{%- endmacro -%}
+
+{%- set title = getTitle(pageId, pageTitle, siteName) -%}
+{%- set url = siteUrl + siteBase + pagePath -%}
+{%- set ogImgUrl = getOgImageUrl(pageOgImage) -%}
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="%VITE_BASE_PATH%logo.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <base href="%VITE_BASE_PATH%"/>
+    <title>{{title}}</title>
+    <meta name="description" content="{{pageDescription}}"/>
+    {% include "./sns.njk" %}
+    <link rel="stylesheet" href="/src/styles/common.scss"/>
+    {% block css %}{% endblock %}
+    <script type="module" src="/src/scripts/common.ts"></script>
+    {% block js %}{% endblock %}
+  </head>
+  <body>
+    <div class="common-layout">
+      <div class="common-layout_header">
+        {%- include 'components/include/CommonHeader/common-header.njk' -%}
+      </div>
+      <div class="common-layout_main">
+        {%- block contents -%}{%- endblock -%}
+      </div>
+      <div class="common-layout_footer">
+        {%- include 'components/include/CommonFooter/common-footer.njk' -%}
+      </div>
+    </div>
+  </body>
+</html>

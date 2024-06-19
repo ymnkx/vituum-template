@@ -26,11 +26,12 @@ export default defineConfig(({ mode }) => {
     plugins: [
       vituum({
         imports: {
+          paths: ['./src/styles/*/**', './src/components/*/**', './src/scripts/*/**'],
           filenamePattern: {
             '+.css': [],
-            '+.scss': 'src/styles',
+            '+.scss': ['src/styles/', 'src/components/'],
             '+.js': [],
-            '+.ts': 'src/scripts',
+            '+.ts': ['src/scripts/', 'src/components/'],
           },
         },
       }),
