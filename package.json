@@ -7,7 +7,8 @@
     "dev": "vite",
     "dev:convert": "node 'scripts/convertImages.js'",
     "dev:all": "npm-run-all -p dev:convert dev",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && npm run build:format",
+    "build:format": "prettier --write 'dist/**/*.html' --ignore-path .prettierignore",
     "preview": "vite preview",
     "svg": "node 'scripts/svgSprite.js'"
   },
