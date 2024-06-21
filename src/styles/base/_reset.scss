@@ -1,4 +1,4 @@
-// https://github.com/mayank99/reset.css
+// cf. https://github.com/mayank99/reset.css
 
 *,
 *::before,
@@ -84,11 +84,11 @@
 }
 
 :where(hr) {
+  block-size: 0;
   overflow: visible;
   color: inherit;
   border: none;
   border-block-start: 1px solid;
-  block-size: 0;
 }
 
 :where(:focus-visible) {
