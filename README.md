@@ -77,3 +77,18 @@ Vituumには最低限の機能しかないので、各ページの設定は手�
 
 ターゲットが最新ブラウザの場合、基本的にwebpだけ使用すれば問題ないです。<br/>
 元画像、圧縮画像、webp画像と３種類をリポジトリで管理します（改善の余地あり）。
+
+## SVG
+
+`src/svg/` フォルダに入れたsvgファイルをsymbol化して、`public/assets/image/icons.svg` にまとめます。
+主な目的としてアイコン管理を想定しています。
+
+たとえば、 `arrow-right.svg` というファイル名のSVGファイルは、以下のように参照可能です。
+
+```
+<svg viewBox="0 0 24 24">
+	<use href="/assets/svg/icons.svg#arrow-right"/>
+</svg>
+```
+
+symbol化して`<use>`タグで使用することで、cssで簡単にスタイルをつけることができます。
