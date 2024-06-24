@@ -1,15 +1,5 @@
 {
-  "site_name": "Vituum Template",
-  "navItems": [
-    {
-      "name": "top",
-      "path": "/",
-      "label": "Top Page"
-    },
-    {
-      "name": "second",
-      "path": "/second/",
-      "label": "Second Page"
-    }
-  ]
+  "siteName": "Vituum Template",
+  "siteUrl": "https://example.com",
+  "siteBase": "/test"
 }

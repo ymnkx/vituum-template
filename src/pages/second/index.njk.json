@@ -1,4 +1,7 @@
 {
-  "title": "SECOND PAGE",
-  "pagename": "second"
+  "pageId": "second",
+  "pageTitle": "SECOND PAGE",
+  "pageDescription": "セカンドページです。",
+  "pagePath": "/second/",
+  "pageOgImage": ""
 }

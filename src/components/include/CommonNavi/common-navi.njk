@@ -1,0 +1,25 @@
+{% set naviItems = [
+  {
+    id: "top",
+    path: "",
+    label: "Top Page"
+  }, {
+    id: "second",
+    path: "second/",
+    label: "Second Page"
+  }, {
+    id: "third",
+    path: "second/third/",
+    label: "Third Page"
+  }
+] %}
+
+<nav class="common-nav">
+  <ul class="common-nav_list">
+    {%- for item in naviItems %}
+      <li>
+        <a href="{{ item.path }}" aria-current="{{pageId == item.id}}">{{ item.label }}</a>
+      </li>
+    {% endfor -%}
+  </ul>
+</nav>

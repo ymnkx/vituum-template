@@ -1,0 +1,13 @@
+{% macro getSizeClass(size = 'midium') %}
+  {%- if size == 'small' %}-small
+  {%- elseif size == 'midium' %}-midium
+  {%- elseif size == 'large' %}-large{% endif -%}
+{% endmacro %}
+
+{% macro Button(props = {
+  primary: false,
+  label: "LABEL",
+  size: "midium"
+}) %}
+  <button type="button" class="common-button{{ ' -primary' if props.primary }} {{ getSizeClass(props.size) }}">{{ props.label }}</button>
+{% endmacro %}

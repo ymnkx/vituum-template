@@ -1,9 +1,0 @@
-<nav class="common-nav">
-  <ul class="common-nav_list">
-    {% for item in navItems %}
-      <li>
-        <a href="{{ item.path }}" aria-current="{% if pagename == item.name %}page{% endif %}">{{ item.label }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>

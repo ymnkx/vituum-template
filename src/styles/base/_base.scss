@@ -1,3 +1,10 @@
 html {
-  color: var(--color-black);
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--typo-font-base);
+  line-height: var(--typo-lh-base);
+  color: var(--color-text-base);
+  background-color: var(--color-bg-base);
 }
